@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+body{
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+section{
+    background-color: #f7f7f7;
+    padding: 6rem 0;
+}

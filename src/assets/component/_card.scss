@@ -1,0 +1,41 @@
+.card{
+    width: 30rem;
+    position: relative;
+    height: 50vh;
+    margin-top: 20px;
+    box-shadow: 0 8px 10px rgba(128, 128, 128, .7);
+
+    &__side{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    &__image{
+        width: inherit;
+        background-size: 100% 100%;
+        height: 100%;
+    }
+
+    &__details{
+        position: absolute;
+        background-color: $color-primary;
+        color: black;
+        width: 100%;
+
+        .name{
+            display: block;
+            font-size: 3rem;
+        }
+
+        .title{
+            display: block;
+            font-size: 1.5rem;
+
+        }
+    }
+
+
+}

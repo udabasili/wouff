@@ -1,0 +1,118 @@
+/**AUTH FORM STYLING **/
+
+.form{
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10%;
+        width: 100%;
+        font-size: 2rem;
+        background-color: $color-primary;
+        color: black;
+        align-self: stretch;
+    }
+
+    &__component{
+        display: flex;
+        margin: 0px auto;
+        margin-top: 30px;
+        width: 80%;
+        position: relative;
+    }
+
+    &__group{
+        position: relative;
+        margin-top: 1.5rem;
+        width: 90%;
+
+
+        &__icon{
+            margin-right: 30px;
+        }
+    }
+
+    &__group-image{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 60%;
+        margin: 30px auto 0 auto;
+
+        &__icon {
+            display: flex;
+            height: 100%;
+
+
+            &:first-child{
+                font-size: 20px;
+            }
+        }
+        .image-upload{
+
+            &__input{
+                display: none;
+            }
+
+            &__message{
+                flex-grow: 1;
+            }
+
+            &__button{
+                @include removeDefaultButtonStyle;
+                border: 1px solid gray;
+                padding: 5px 10px;
+                cursor: pointer;
+                color: black;
+                background-color: white;
+            }
+            
+        }
+
+    }
+    
+    &__input{
+        border: none;
+        position: relative;
+        background-color: transparent;
+        border-bottom:3px solid black;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__label{
+        position: absolute;
+        font-size: 1.2rem;
+        left: 0;
+        top: -2rem;
+
+
+    }
+
+    &__textarea{
+        min-width: 50rem;
+        height: 20rem;
+    }
+    
+}
+
+.login-signup{
+    position: absolute;
+    bottom: 10%;
+    font-size: 1.3rem;
+    padding-top: .5rem ;
+
+    .switch-auth{
+        color: red;
+        cursor: pointer;
+    }
+}
+
+.alert-error{
+    color: #D8000C;
+    background-color: #FFD2D2;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}

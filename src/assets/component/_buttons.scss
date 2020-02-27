@@ -1,0 +1,50 @@
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  display: inline-block; 
+  border-radius: 100px;
+  transition: all .3s;
+  position: relative;
+}
+
+.btn-white{
+  background-color: $button-color;
+  color: $color-white;
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba($color-black , .2);/**x, y, blur, color)**/
+}
+.btn:active{
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba($color-black, .2);
+}
+
+/* when we hover the button show the after element with the styles below added**/
+.btn:hover::after{
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+
+}
+
+.form-submit-button{
+  width: 20%;
+  background-color:white;
+  color: black;
+  padding: 14px 20px;
+  margin: 10px auto;
+  position: relative;
+  top: 5%;
+  border-radius: 4px;
+  cursor: pointer;
+
+
+&:hover {
+  box-shadow: 2px 2px 10px black;
+
+}
+}
