@@ -1,6 +1,5 @@
 import React from 'react';
-import Icon from "../assets/symbol-defs.svg";
-
+import { isMobile } from 'react-device-detect';
 
 export default function Header() {
 
@@ -11,8 +10,11 @@ export default function Header() {
             <h1 className="header-primary">
                 <span className="header-primary-main">Wouff</span>
                 <span className="header-primary-sub">Where we love your dogs like you do</span>
-            </h1>
-            <a href="#about" className="btn btn-white">Getting Started</a>
+            </h1>           
+            {isMobile ? 
+              <a href="#service" className="btn btn-white">Getting Started</a> :
+              <a href="#about" className="btn btn-white">Getting Started</a>
+            }
         </div>
         
     </header>

@@ -1,4 +1,6 @@
 import React,{useCallback} from 'react';
+import {isBrowser} from 'react-device-detect';
+
 
 export default function Navigation() {
   const hideNav = useCallback(
@@ -18,8 +20,10 @@ export default function Navigation() {
         <div className="navigation__background"></div>
         <nav  className="navigation__nav">
             <ul className="navigation__list">
+              {isBrowser && (
                 <li onClick={hideNav} className="navigation__item">
                   <a href="#about" class="navigation__link">About</a></li>
+                )}
                 <li onClick={hideNav} className="navigation__item">
                   <a href="#service" class="navigation__link">Services</a></li>
                 <li onClick={hideNav} className="navigation__item">

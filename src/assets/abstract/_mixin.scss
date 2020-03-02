@@ -5,3 +5,12 @@
     overflow: hidden;
     position: relative;
 }
+
+@mixin response($device){
+    @if $device == phone {
+        @media only screen and (max-width: 600px) {
+            @content
+        };
+    }
+   
+}

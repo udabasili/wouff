@@ -9,7 +9,6 @@ import validator from './validator';
 */
 class Contact extends Component {
     state={
-        error:null,
         data: {
           name: {
             value: ''
@@ -150,9 +149,6 @@ class Contact extends Component {
               </div>
             </div>
             <div className="form__component">
-              <i className="form__group__icon">
-                <FontAwesomeIcon icon={faKey}/>
-              </i>
             <div className="form__group">
             <textarea className="form__textarea"></textarea>
             <label htmlFor="message" className="form__label">Message</label>

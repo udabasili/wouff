@@ -19,12 +19,18 @@
         margin-top: 30px;
         width: 80%;
         position: relative;
+
+        @include response(phone){
+            width: 90%;
+
+        }
+    
     }
 
     &__group{
         position: relative;
         margin-top: 1.5rem;
-        width: 90%;
+        width: 80%;
 
 
         &__icon{
@@ -38,6 +44,12 @@
         justify-content: center;
         width: 60%;
         margin: 30px auto 0 auto;
+
+        @include response(phone){
+            width: 90%;
+
+        }
+        
 
         &__icon {
             display: flex;
@@ -91,28 +103,14 @@
     }
 
     &__textarea{
-        min-width: 50rem;
         height: 20rem;
+        width: 120%;
+
+        @include response(phone){
+            width: 120%;
+        }
+    
     }
     
 }
 
-.login-signup{
-    position: absolute;
-    bottom: 10%;
-    font-size: 1.3rem;
-    padding-top: .5rem ;
-
-    .switch-auth{
-        color: red;
-        cursor: pointer;
-    }
-}
-
-.alert-error{
-    color: #D8000C;
-    background-color: #FFD2D2;
-    width: 60%;
-    margin: 0 auto;
-    font-size: 1.5rem;
-}

@@ -2,6 +2,11 @@
     padding: 15rem 0 ;
     background-color: $color-gray-light-1;
 
+    @include response(phone){
+        display: none;
+
+    }
+
 }
 
 .staff-section{
@@ -87,6 +92,11 @@
     font-size:1.6rem;
     margin: 3rem auto;
 
+    @include response(phone){
+        width: 90%;
+
+    }
+
     &__shape{
         width: 12rem;
         float: left;
@@ -145,14 +155,11 @@
     background-color: rgba($color-primary, .1);
     justify-content: center;
     box-shadow: 2px 2px 10px black;
+
+    @include response(phone){
+        width: 90%;
+    }
+
     
 }
 
-@media only screen and (max-width:600px){
-    .form{
-        width:80%;
-        margin: 0 auto;
-
-    }
-
-}
