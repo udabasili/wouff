@@ -6,4 +6,4 @@ This is a sample website for a dog training company
 
 
 ### To Run
-The best way is to visit the  website  [Top Shop](https://wouff.herokuapp.com/).
+The best way is to visit the  website  [Wouff](https://wouff.netlify.com/).
